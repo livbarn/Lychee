@@ -34,6 +34,11 @@ if (isset($_POST['function']))     $fn = $_POST['function'];
 else if (isset($_GET['function'])) $fn = $_GET['function'];
 else                               $fn = null;
 
+// upic access token
+if (isset($_POST['token']))     $token = $_POST['token'];
+else if (isset($_GET['token'])) $token = $_GET['token'];
+else                               $token = null;
+
 // Check if a function has been specified
 if (!empty($fn)) {
 

@@ -22,6 +22,7 @@ define('LYCHEE_PLUGINS', LYCHEE . 'plugins/');
 define('LYCHEE_CONFIG_FILE', LYCHEE_DATA . 'config.php');
 
 // Define urls
+define('ROOT_DIR', 'picbarn/');
 define('LYCHEE_URL_UPLOADS_BIG', 'uploads/big/');
 define('LYCHEE_URL_UPLOADS_MEDIUM', 'uploads/medium/');
 define('LYCHEE_URL_UPLOADS_THUMB', 'uploads/thumb/');

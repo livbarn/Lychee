@@ -17,6 +17,8 @@ To run Lychee, everything you need is a web-server with PHP 5.5 or later and a M
 
 You can use Lychee right after the installation. Here are some advanced features to get the most out of it.
 
+sudo chmod -R 750 uploads/ data/
+
 ### Settings
 
 Sign in and click the gear in the top left corner to change your settings. If you want to edit them manually: MySQL details are stored in `data/config.php`. Other options and hidden settings are stored directly in the database. [Settings &#187;](docs/Settings.md)
@@ -34,8 +36,6 @@ Lychee is ready to use, right out of the box. If you want to contribute and edit
 ![](https://www.workfox.cn/lychee/view.php?p=15759085405247)
 
 **PS：其中token 需要自行修改 ./php/index.php:62 代码。**
-
-
 
 ### Keyboard Shortcuts
 
