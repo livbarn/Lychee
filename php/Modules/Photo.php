@@ -950,6 +950,40 @@ final class Photo {
 	}
 
 	/**
+	 * author: liv 
+	 * 返回photo 的url
+	 * @return resource|boolean Sends a ZIP-file or returns false on failure.
+	 */
+	public function getPhotoUrl($photoIDs) {
+
+		// Check dependencies
+		if (Validator::isPhotoIDs($photoIDs)===false) {
+			Log::error(Database::get(), __METHOD__, __LINE__, 'getPhotoUrl param photoIDs invalid');
+			return '';
+		}
+
+		// Call plugins
+		Plugins::get()->activate(__METHOD__, 0, func_get_args());
+
+		// Get photo
+		$query  = Database::prepare(Database::get(), "SELECT title, url FROM ? WHERE id = '?' LIMIT 1", array(LYCHEE_TABLE_PHOTOS, $this->photoIDs));
+		$photos = Database::execute(Database::get(), $query, __METHOD__, __LINE__);
+
+		if ($photos===false) return '';
+
+		// Get photo object
+		$photo = $photos->fetch_object();
+
+		// Photo not found?
+		if ($photo===null) {
+			Log::error(Database::get(), __METHOD__, __LINE__, 'Could not find specified photo');
+			return '';
+		}
+
+		return $photo->url;
+	}
+
+	/**
 	 * Sets the title of a photo.
 	 * @return boolean Returns true when successful.
 	 */

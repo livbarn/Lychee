@@ -29,6 +29,14 @@ Updating is as easy as it should be.  [Update &#187;](docs/Update.md)
 
 Lychee is ready to use, right out of the box. If you want to contribute and edit CSS or JS files, you need to rebuild Lychee. [Build &#187;](docs/Build.md)
 
+### Upic 图床客户端配置
+![](https://www.workfox.cn/lychee/view.php?p=15759085334398)
+![](https://www.workfox.cn/lychee/view.php?p=15759085405247)
+
+**PS：其中token 需要自行修改 ./php/index.php:62 代码。**
+
+
+
 ### Keyboard Shortcuts
 
 These shortcuts will help you to use Lychee even faster. [Keyboard Shortcuts &#187;](docs/Keyboard%20Shortcuts.md)

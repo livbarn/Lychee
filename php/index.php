@@ -15,6 +15,7 @@ use Lychee\Modules\Validator;
 use Lychee\Access\Installation;
 use Lychee\Access\Admin;
 use Lychee\Access\Guest;
+use Lychee\Access\Upic;
 
 require(__DIR__ . '/define.php');
 require(__DIR__ . '/autoload.php');
@@ -58,9 +59,12 @@ if (!empty($fn)) {
 		exit();
 
 	}
-
+	if ($token==='upic access token') {
+		Upic::init($fn);
+		exit();
+	}
 	// Check if user is logged
-	if ((isset($_SESSION['login'])&&$_SESSION['login']===true)&&
+	else if ((isset($_SESSION['login'])&&$_SESSION['login']===true)&&
 		(isset($_SESSION['identifier'])&&$_SESSION['identifier']===Settings::get()['identifier'])) {
 
 		/**
