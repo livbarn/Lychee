@@ -32,8 +32,8 @@ Updating is as easy as it should be.  [Update &#187;](docs/Update.md)
 Lychee is ready to use, right out of the box. If you want to contribute and edit CSS or JS files, you need to rebuild Lychee. [Build &#187;](docs/Build.md)
 
 ### Upic 图床客户端配置
-![](https://www.workfox.cn/lychee/view.php?p=15759085334398)
-![](https://www.workfox.cn/lychee/view.php?p=15759085405247)
+![](https://www.workfox.cn/picbarn/uploads/big/7450984ab0a53bc8749722582737e8bc.jpg)
+![](https://www.workfox.cn/picbarn/uploads/big/9d8d590b429d3e8bbe0bcffee2f12a91.jpg)
 
 **PS：其中token 需要自行修改 ./php/index.php:62 代码。**
 
